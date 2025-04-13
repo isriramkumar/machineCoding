@@ -1,7 +1,5 @@
-package TicTacToe.Models;
+package ticTacToe.models;
 
 public enum BotDifficultyLevel {
-    Easy,
-    Medium,
-    Hard
+    EASY, MEDIUM, HARD
 }

@@ -1,4 +1,4 @@
-package TicTacToe.Models;
+package ticTacToe.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,16 +10,33 @@ public class Board {
     public Board(int size) {
         this.size = size; //3
         this.board = new ArrayList<>();
+
         /*
-            [_,_,_]
-            [_,_,_]
-            [_,_,_]
+                    [_, _, _]
+                    [_, _, _]
+                    [_, _, _]
          */
-        for(int i=0; i<size; i++){
+
+        for(int i=0;i<size;i++){
             this.board.add(new ArrayList<>());
-            for(int j=0; j<size; j++){
-                this.board.get(i).add(new Cell(i, j));
+            for(int j=0;j<size;j++){
+                this.board.get(i).add(new Cell(i,j));
             }
+        }
+    }
+
+    public Board(Board board){
+        this.size = board.size;
+        this.board = board.board;
+    }
+
+    public void printBoard(){
+        for(int i=0;i<size;i++){
+            List<Cell> cells = board.get(i);
+            for(Cell cell : cells){
+                cell.display();
+            }
+            System.out.println();
         }
     }
 
@@ -39,3 +56,5 @@ public class Board {
         this.board = board;
     }
 }
+
+// 8:20 AM -> break

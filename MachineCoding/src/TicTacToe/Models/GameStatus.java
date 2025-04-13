@@ -1,8 +1,7 @@
-package TicTacToe.Models;
+package ticTacToe.models;
 
 public enum GameStatus {
-    InProgress,
-    Draw,
-    Completed
-
+    IN_PROGRESS,
+    DRAW,
+    COMPLETED
 }

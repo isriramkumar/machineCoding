@@ -1,6 +1,5 @@
-package TicTacToe.Models;
+package ticTacToe.models;
 
 public enum PlayerType {
-    Human,
-    Bot
+    HUMAN,BOT;
 }

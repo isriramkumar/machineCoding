@@ -1,4 +1,4 @@
-package TicTacToe.Models;
+package ticTacToe.models;
 
 public class Cell {
     private int row;
@@ -9,7 +9,15 @@ public class Cell {
     public Cell(int row, int col) {
         this.row = row;
         this.col = col;
-        this.cellState = CellState.Empty;
+        this.cellState = CellState.EMPTY;
+    }
+
+    public void display(){
+        if(player == null){
+            System.out.print("| |");
+        } else {
+            System.out.print("|" + player.getSymbol() + "|");
+        }
     }
 
     public int getRow() {
