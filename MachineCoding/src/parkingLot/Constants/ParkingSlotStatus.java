@@ -1,0 +1,5 @@
+package parkingLot.Constants;
+
+public enum ParkingSlotStatus {
+    AVAILABLE, NOT_AVAILABLE, BLOCKED;
+}
