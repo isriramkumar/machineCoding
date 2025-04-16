@@ -1,5 +1,7 @@
 package ticTacToe.models;
 
+import ticTacToe.models.constants.CellState;
+
 public class Cell {
     private int row;
     private int col;

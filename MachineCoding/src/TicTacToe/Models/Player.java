@@ -1,6 +1,8 @@
 package ticTacToe.models;
 
 import ticTacToe.exception.GameOverException;
+import ticTacToe.models.constants.CellState;
+import ticTacToe.models.constants.PlayerType;
 
 import java.util.Scanner;
 

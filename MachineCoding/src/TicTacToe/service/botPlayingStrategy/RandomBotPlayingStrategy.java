@@ -2,6 +2,7 @@ package ticTacToe.service.botPlayingStrategy;
 
 import ticTacToe.exception.GameOverException;
 import ticTacToe.models.*;
+import ticTacToe.models.constants.CellState;
 
 import java.util.List;
 

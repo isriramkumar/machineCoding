@@ -1,6 +1,8 @@
 package ticTacToe.models;
 
 import ticTacToe.exception.GameOverException;
+import ticTacToe.models.constants.BotDifficultyLevel;
+import ticTacToe.models.constants.PlayerType;
 import ticTacToe.service.botPlayingStrategy.BotPlayingStrategy;
 import ticTacToe.service.botPlayingStrategy.BotPlayingStrategyFactory;
 
