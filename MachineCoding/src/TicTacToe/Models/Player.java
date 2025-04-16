@@ -1,6 +1,8 @@
 package ticTacToe.models;
 
 import ticTacToe.exception.GameOverException;
+import ticTacToe.models.constants.CellState;
+import ticTacToe.models.constants.PlayerType;
 
 import java.util.Scanner;
 
@@ -20,7 +22,7 @@ public class Player {
         this.playerType = playerType;
     }
 
-    public Move makeMove(Board board) throws GameOverException {
+    public Move     makeMove(Board board) throws GameOverException {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the row for your move, " + this.getName());
         int row = sc.nextInt();

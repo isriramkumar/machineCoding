@@ -2,6 +2,7 @@ package ticTacToe.controller;
 
 import ticTacToe.exception.GameOverException;
 import ticTacToe.models.*;
+import ticTacToe.models.constants.GameStatus;
 import ticTacToe.service.winningStrategy.WinningStrategies;
 import ticTacToe.service.winningStrategy.WinningStrategyFactory;
 
